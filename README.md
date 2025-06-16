@@ -1,1 +1,0 @@
-# Krushna-Nanda.github.io
