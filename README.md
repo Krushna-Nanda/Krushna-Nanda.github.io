@@ -1,1 +1,1 @@
-# Krushna-Nanda.github.io
+#### [Check out mini project site 🚀](https://Krushna-Nanda.github.io)
