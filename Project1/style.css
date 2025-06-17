@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+
+
+}
+
+#nav_part1 {
+    display: flex;
+    align-items: center;
+}
+
+.nav h3 {
+    font-size: 16px;
+    border: 1.5px solid #000;
+    padding: 5px 10px;
+    border-radius: 50px;
+
+}
+
+#nav_part1 i {
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 5px 6px;
+}
+
+#nav_part1 h3 {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#nav_part2 h1 {
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#nav_part2 #tooth {
+    width: 26px;
+    height: 27px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 4.5px;
+    padding: 4px;
+    background-color: rgb(218, 58, 0);
+}
+
+#nav_part3 button {
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 12px;
+    border: 1.5px solid #000;
+
+}
+
+#nav_part3 #button2 {
+    color: white;
+    background-color: orangered;
+    border: none;
+    margin-left: -5px;
+    font-size: 17px;
+}
+
+#nav_part2 {
+    display: flex;
+    align-items: center;
+}
+
+#main>h1 {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+
+}
+
+#image_container img {
+    width: 295px;
+    height: 380px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#image_container #img1 {
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+#image_container #img2 {
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+#image_container #img3 {
+    transform: translate(-50%, -50%) rotate(-10deg);
+
+}
+
+#image_container #img4 {
+    transform: translate(-50%, -50%) rotate(-5deg);
+
+}
+
+#btm_left {
+    font-weight: 100;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+
+}
+
+.smile {
+    position: relative;
+    bottom: -5px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 1px 1px;
+    background-color: orangered;
+}
+
+#social_media_icon {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+}
+
+#social_media_icon i {
+    font-size: 10px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 5px 6px;
+    cursor: pointer;
+}
+
+/* Tooltip styling */
+#social_media_icon .ri-youtube-line::after {
+    content: attr(data-tooltip);
+    /* Display the text from the data-tooltip attribute */
+    position: absolute;
+    bottom: 150%;
+    /* Position above the icon */
+    left: 50%;
+    transform: translateX(-125%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+#social_media_icon .ri-instagram-line::after {
+    content: attr(data-tooltip);
+    /* Display the text from the data-tooltip attribute */
+    position: absolute;
+    bottom: 150%;
+    /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+#social_media_icon .ri-twitter-line::after {
+    content: attr(data-tooltip);
+    /* Display the text from the data-tooltip attribute */
+    position: absolute;
+    bottom: 150%;
+    /* Position above the icon */
+    left: 50%;
+    transform: translateX(10%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+/* Show tooltip on hover */
+#social_media_icon i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+h5 {
+    font-weight: 100;
+    font-size: 13px;
+    position: absolute;
+    bottom: 8px;
+    right: 3%;
+
+}
+a {
+    text-decoration: none;
+}
